@@ -71,6 +71,10 @@ const guestRoutes: RouteObject[] = [
 // Private routes (redirect to login if not authenticated)
 const privateRoutes: RouteObject[] = [
   {
+    path: '/trips',
+    Component: lazy(() => import('./pages/MyTripsPage'))
+  },
+  {
     path: '/trips/new',
     Component: lazy(() => import('./pages/TripFormPage'))
   },
