@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet custom styles */
+.leaflet-container {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 12px 14px;
+}
+
+.custom-popup .leaflet-popup-tip {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Travel-inspired gradient backgrounds */
+.bg-travel-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-sunset-gradient {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.bg-ocean-gradient {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.bg-nature-gradient {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+/* Weather condition backgrounds */
+.weather-sunny {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.weather-cloudy {
+  background: linear-gradient(135deg, #e0e5ec 0%, #c9d6df 100%);
+}
+
+.weather-rainy {
+  background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.weather-stormy {
+  background: linear-gradient(135deg, #8e9eab 0%, #eef2f3 100%);
+}
+
+/* Card hover effects */
+.card-hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Weather icon animations */
+.weather-icon-sunny {
+  animation: spin-slow 20s linear infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Mobile touch feedback */
+@media (hover: none) {
+  .card-hover-lift:active {
+    transform: scale(0.98);
+  }
+}
