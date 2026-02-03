@@ -1,7 +1,7 @@
 {
-  "buildCommand": "modelence build",
+  "buildCommand": "npm run build && ls -la .modelence/client",
   "outputDirectory": ".modelence/client",
   "framework": "vite",
   "installCommand": "npm install",
-  "devCommand": "modelence dev"
+  "devCommand": "npm run dev"
 }
