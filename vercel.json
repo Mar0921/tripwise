@@ -1,6 +1,6 @@
 {
   "buildCommand": "modelence build",
-  "outputDirectory": ".modelence/client/dist",
+  "outputDirectory": ".modelence/client",
   "framework": "vite",
   "installCommand": "npm install",
   "devCommand": "modelence dev"
